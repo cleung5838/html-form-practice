@@ -36,30 +36,60 @@
 
                     <label for="status">Status</label>
                     <select id="role" name="user_status">
+                        <option value=""> </option>
                         <option value="student">Student</option>
                         <option value="instructor">Instructor</option>
                         <option value="guest">Guest</option>
                     </select>
 
                 </div>
+            </fieldset>
 
-                <p>Choose your favorite programming language.</p>
+            <fieldset>
+                <legend>Info</legend>
 
-                <button>HTML</button>
-                <button>CSS</button>
-                <button>JavaScript</button>
+                <div>
+                    <p>Choose your favorite programming language.</p>
+
+                        <button>HTML</button>
+                        <button>CSS</button>
+                        <button>JavaScript</button>
+                </div>
+
+                <div>
+                    <label for="nuts">How many nuts do you have or need?</label>
+                    <input type="number" id="nuts" name="nuts_have_or_needed">
+                </div>
 
                 <div>
                     <label for="comments">Comments:</label>
                     <textarea id="comments" name="comments"></textarea>
                 </div>
 
+            </fieldset>
+
+
 
                 <div>
                     <label for="todaysDate">Today's Date:</label>
                     <input type="date" id="date" name="todays_date">
                 </div>
-            </fieldset>
+
+                <div>
+                    <label for="newsletterSignUp">Sign up for newsletter</label>
+                    <input type="checkbox" id="newsletterSignUp" name="newsletter_sign_up">
+                </div>
+
+                <div>
+                    <label for="agreement">Agree to terms and conditions:</label>
+                    <input type="checkbox" id="agreement" name="agreement_to_terms">
+
+                </div>
+
+
+
+                <button type="submit">Submit form</button>
+
 
         </form>
 
